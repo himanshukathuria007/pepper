@@ -16,10 +16,18 @@ router.get('/contact', ensureAuthenticated, function (req, res) {
 	res.render('contact');
 });   
 //image
-router.get('/image', ensureAuthenticated, function (req, res) {
+/*router.get('/image', ensureAuthenticated, function (req, res) {
 	res.render('image');
 });  
+*/
+// router.get('/image', ensureAuthenticated, function (req, res) {
+// 	res.render('image', { username: req.user.username });
+// });  
 
+//employee
+router.get('/employee', ensureAuthenticated, function (req, res) {
+	res.render('employee');
+});   
 
 
 
